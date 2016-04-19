@@ -136,7 +136,7 @@ angular
         deferred = $q.defer()
         options = @ws.options if not options
         @ws.getUser(id, options).on 'success', (data)->
-          deferred.resovle(data)
+          deferred.resolve(data)
         .on 'error', (err)->
           deferred.reject(err)
 
